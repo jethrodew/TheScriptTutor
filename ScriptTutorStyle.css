@@ -1,0 +1,496 @@
+/*
+ * Glyphicons courtesy of Icon Maven
+ * All Other images owned by Jethro Dew
+ * 
+ * 
+ * 
+*/
+/* Main Structure */
+body {
+	margin: 100px 0 0 0;
+	background: #FFFDE2;
+	font-size: 11pt;
+	font-family:sans-serif;
+	color: #383838;
+}
+ul {
+	list-style-type:none;
+}
+a {
+	color: #383838;
+	padding:4px;
+}
+input[type="submit"] {
+	cursor:pointer;
+}
+
+/* Header */
+header {
+	width: 100%;
+	top: 0;
+	left:0;
+	position: fixed;
+	background: #721625;
+	height: 100px;
+	color: #FFF;
+
+}
+header .logo {
+	padding: 0;
+	margin: 5px 0 5px 0;
+	clear: none;
+	float: left;
+	width: 85px;
+	height: 90px;
+	border: 0;
+	color: transparent;
+	background-color: transparent;
+	outline-style: none;
+}
+.siteTitle {
+	font-size: 1.6em;
+	margin-top: 23px;
+}
+#hLeft {
+	height: 100%;
+	float: left;
+	width: 180px;
+}
+#hRight {
+	margin-left: 180px;
+	position: relative;
+	top: 0;
+	height: 100px;
+}
+#upStatus {
+	height:25px;
+	width:100%;
+	text-align: center;
+	line-height: 25px;
+}
+#siteMenu {
+	width:100%;
+	height: 65px;
+	padding-top: 10px;
+}
+#siteMenu ul {
+	padding:0;
+	margin:0;
+	width:100%;
+	display:block;
+}
+#siteMenu ul li {
+	display: inline-block;
+}
+#siteMenu ul li a{
+	display: block;
+	line-height: 2em;
+	font-weight: bold;
+	padding: 8px 20px;
+	color: #FFF;
+	text-decoration: none;
+	font-size: 1.2em;
+	border: 1px solid white;
+	border-radius: 10px;
+}
+#siteMenu ul li a:hover {
+	color:#721625;
+	background:#FFF;
+}
+#site_menu_click {
+	display:none;
+	line-height: 2em;
+	font-weight: bold;
+	padding: 8px 20px;
+	color: #FFF;
+	text-decoration: none;
+	font-size: 1.2em;
+	border: 1px solid white;
+	border-radius: 10px;
+	width: 60%;
+	text-align: center;
+}
+#site_menu_click:hover {
+	color:#721625;
+	background:#FFF;
+}
+
+@media(max-width: 524px) {
+	#siteMenu ul li {
+		width:96%;
+		display:block;
+	}
+	#site_menu_click {
+		display:block;
+	}
+	#siteMenu ul {
+		display:none;
+	}
+	#site_menu_click .optionsGlyph {
+		background: url("images/glyphicons.png") -6px -85px;
+		height: 30px;
+		width: 30px;
+		display: inline-block;
+		vertical-align: middle;
+		padding: 0;
+		margin: 0;
+	}
+	#siteMenu ul li a{
+		background: #721625;
+		text-align:center;
+	}
+}
+
+/* Main Content */
+main {
+	height:100%;
+	padding:10px;
+}
+#pageContent h1 a{
+	text-decoration:none;
+}
+#pageContent li a {
+	color: #383838;
+	display:inline-block;
+	background:inherit;
+	padding: 10px;
+	font-weight: bold;
+	vertical-align: middle;
+}
+#pageContent li:nth-child(odd) {
+	background: #FFD3D3;
+}
+/* HOME & LOGIN */
+#compat_head {
+	font-weight: 700;
+	color: #721625;
+}
+#compat ul {
+	padding: 10px;
+	border: 1px solid #721625;
+	max-width: 30em;
+	border-radius: 10px;
+}
+#compat ul li {
+	background: white;
+	padding: 10px;
+}
+#compat ul li ul li {
+	padding:3px;
+}
+/* LOGIN */
+#lemail, #lpwd {
+	padding: 5px;
+	border-radius: 5px;
+	border: #d2d2d2 1px solid;
+}
+.invalidLogin {
+	border: #721625 4px solid !important;
+}
+
+/* SCRIPT */
+#scriptTabs {
+	border-bottom:1px solid #BDBDBD;
+}
+#scriptTabs a {
+	display: inline-block;
+	text-decoration: none;
+	border: solid 1px #BDBDBD;
+	margin-bottom: -1px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	padding: 15px;
+	background: #fff;
+	font-weight: bold;
+	box-shadow: #BDBDBD 2px 0px 8px;
+}
+#scriptTabs a:hover {
+	background:#721625;
+	color:#fff;
+}
+.script,.characters {
+	text-transform: capitalize;
+}
+#scriptContent h2 {
+	margin-bottom:5px;
+	margin-top:10px;
+}
+.ownsnocharacters, .ownsnolines, .ownsnoscripts {
+	padding: 5px;
+	font-weight: bold;
+	color: #721625;
+}
+.scriptError {
+	padding: 5px;
+	font-weight: bold;
+	color: #721625;
+	font-size: 1.2em;
+}
+#lineList, #characterList, #scriptList {
+	width: 96%;
+	padding: 5px 2%;
+	margin:10px 0;
+}
+#scriptDialogue p {
+	margin: 0 5%;
+}
+.optionsError {
+	font-weight:bold;
+	color: #721625;
+}
+
+/* Script Summary */
+#scriptControl a {
+	display: inline-block;
+	line-height: 45px;
+	box-shadow: #BDBDBD 1px 1px 2px 2px;
+	width: 16em;
+	margin: 10px;
+	text-align: center;
+	border-radius: 5px;
+	background: #FFF;
+}
+#manageScript a {
+	display: inline-block;
+	line-height: 45px;
+	box-shadow: #BDBDBD 1px 1px 2px 2px;
+	width: 16em;
+	margin: 10px;
+	text-align: center;
+	border-radius: 5px;
+	background: #FFF;
+}
+#scriptDialogue form {
+	margin:20px;
+}
+#scriptDialogue input {
+	margin-left: 30px;
+}
+#scriptDialogue label {
+	margin-left: 30px;
+}
+#characterList li a .optionsGlyph {
+	display:block;
+}
+#characterList li a .optionsGlyph {
+	background: url("images/glyphicons.png") -6px -85px;
+	height: 30px;
+	width: 30px;
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0;
+	margin: 0;
+	margin-right: 10px;
+}
+#characterList li a.character {
+	display:block;
+}
+#pageContent .charOptions form {
+	display:inline-block;
+}
+#charOpB {
+	margin: -3px 0 3px 45px;
+}
+.delScript a {
+	font-weight:bold;
+}
+
+/* Recording */
+#recordingControls a {
+	display: inline-block;
+	line-height: 45px;
+	box-shadow: #BDBDBD 1px 1px 2px 2px;
+	width: 16em;
+	margin: 5px;
+	text-align: center;
+	border-radius: 5px;
+	background: #FFF;
+}
+.recording {
+	background:#721625 !important;
+	color: white !important;
+	font-weight:bold;
+}
+.paused {
+	background: #3284DD !important;
+}
+.sRecording {
+	width:40px;
+	height:40px;
+	background: #721625 url("images/glyphicons.png") 0 -120px;
+	display: inline-block;
+	border-radius:10px;
+	vertical-align: middle;
+	margin: 0 0 0 -40px;
+}
+#recordingUploads {
+	background: #FFF;
+	border-radius: 10px;
+	padding: 5px;
+	border: solid 1px #d2d2d2;
+	box-shadow: #d2d2d2 2px 3px 7px;
+	max-width: 50em;
+	max-height: 5em;
+	overflow: hidden;
+	text-align: center;
+}
+#recordingUploads p {
+	margin:0;
+	font-style: italic;
+	font-size:0.9em;
+}
+
+/* Script Contents */
+#playerFilter h2 {
+	padding: 0;
+	margin: 0;
+	margin-left:10px;
+}
+#playerFilter ul {
+	padding:0;
+	margin:0;
+}
+#playerFilter li {
+	background: inherit !important;
+	display: inline-block;
+}
+#playerFilter li a {
+	display: inline-block;
+	line-height: 45px;
+	box-shadow: #BDBDBD 1px 1px 2px 2px;
+	width: 16em;
+	margin: 10px;
+	text-align: center;
+	border-radius: 5px;
+	background: #FFF;
+}
+#playerFilter li a.activeChar {
+	background: #bdbdbd url("images/mute.png") center right 10px no-repeat;
+}
+#scriptLines h2 {
+	margin-left:10px;
+}
+.getOfflineTrack {
+	display: inline-block;
+	background: #721625;
+	line-height: 1em;
+	padding: 15px 25px;
+	color: #FFF;
+	text-decoration: none;
+	font-size: 1em;
+	border: 1px solid white;
+	border-radius: 10px;
+}
+.playLine {
+	display:inline-block !important;
+}
+.playLine div{
+	display: inline-block;
+	margin: 0;
+	margin-right: 20px;
+	vertical-align: middle;
+}
+.playLine div.text{
+	font-weight: normal;
+	text-decoration: none;
+	margin:0;
+	text-transform: none;
+}
+.lplaying {
+
+}
+.lrecording {
+	width:40px;
+	height:40px;
+	background: #721625 url("images/glyphicons.png") 0 -120px;
+	display: inline-block;
+	border-radius:10px;
+	vertical-align: middle;
+}
+#pageContent li a.lineOptions {
+	background: #FFF url("images/glyphicons.png") 0 -80px;
+	height: 40px;
+	width: 40px;
+	border-radius: 10px;
+	display:inline-block;
+	padding:0;
+	margin: 5px 5px 10px 40px;
+}
+#pageContent li a.lineOptions:hover {
+	background: #721625 url("images/glyphicons.png") 0 -80px;
+}
+#lineList li {
+	display: block;
+}
+#lineList li a {
+	display:inline;
+	text-decoration: none;
+}
+#lineOpB {
+	margin: 0 0 4px 45px;
+}
+#pageContent #lineOpB a {
+	display: inline-block;
+}
+#linePlaying {
+	background: url("images/glyphicons.png") -80px -80px;
+	height: 40px;
+	width: 40px;
+	display:inline-block;
+	padding:0;
+	margin:0;
+	vertical-align: middle;
+	margin-right: -40px;
+}
+.trackErr {
+	border: 8px #721625 solid;
+	border-radius: 10px;
+	margin-top:2px;
+}
+/* Account */
+#accountControl a {
+	display: inline-block;
+	line-height: 45px;
+	box-shadow: #BDBDBD 1px 1px 2px 2px;
+	width: 16em;
+	margin: 10px;
+	text-align: center;
+	border-radius: 5px;
+	background: #FFF;
+}
+#pageContent label{
+	display:block;
+	clear:both;
+	margin-top: 6px;
+	font-weight: 700;
+}
+#pageContent input{
+	display:block;
+	clear:both;
+	padding: 5px;
+	border-radius: 5px;
+	border: #d2d2d2 1px solid;
+}
+#pageContent input[type="submit"] {
+	margin: 10px;
+	padding:15px 20px;
+	background: #721625;
+	line-height: 1em;
+	font-weight: bold;
+	color: #FFF;
+	text-decoration: none;
+	font-size: 1em;
+	border: 1px solid white;
+	border-radius: 10px;
+}
+a#login_click, a#forgotten_click, a#register_click {
+	display: inline-block;
+	background: #721625;
+	line-height: 1em;
+	padding: 15px 25px;
+	color: #FFF;
+	text-decoration: none;
+	font-size: 1em;
+	border: 1px solid white;
+	border-radius: 10px;
+}
